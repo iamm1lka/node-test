@@ -1,0 +1,11 @@
+mixin product-card(product)
+	.col-md-3
+		.card
+			img.card-img-top(
+				src=product.image 
+				alt=`Изображение ${product.name}`
+			)
+			.card-body
+				h5.card-title= product.title
+				p.card-text= `Стоимость: ${product.price}р.`
+				a.btn.btn-primary(href="#") Посмотреть товар
